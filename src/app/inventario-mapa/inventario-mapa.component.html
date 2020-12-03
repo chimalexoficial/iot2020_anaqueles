@@ -1,0 +1,85 @@
+<div class="container-fluid" id="padre_container">
+    <div class="row col-12" id="div_buscador">
+        <!-- Search form -->
+        <form #queryForm="ngForm" (ngSubmit)="busqueda(queryForm)">
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <input class="form-control" type="text" placeholder="Modelo"
+                    id="Modelo" name="Modelo" ngModel>
+                </div>
+                <div class="form-group col-4">
+                    <input class="form-control" type="text" placeholder="Color"
+                    id="Color" name="Color" ngModel>
+                </div>
+                <div class="form-group col-4">
+                    <input class="form-control " type="number" placeholder="Numero"
+                    min="22" max="26"  id="Numero" name="Numero" ngModel>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <input class="form-control" type="text" placeholder="Sucursal: PS001" readonly>
+                </div>
+                <div class="form-group col-8">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                    <button type="button" class="btn btn-danger" (click)="resetBusqueda()">Restablecer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <p>Anaquel 1</p>
+            <p>{{conteo_anaqueles[0]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 2</p>
+            <p>{{conteo_anaqueles[1]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 3</p>
+            <p>{{conteo_anaqueles[2]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 4</p>
+            <p>{{conteo_anaqueles[3]}} pares</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <p>Anaquel 5</p>
+            <p>{{conteo_anaqueles[4]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 6</p>
+            <p>{{conteo_anaqueles[5]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 7</p>
+            <p>{{conteo_anaqueles[6]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 8</p>
+            <p>{{conteo_anaqueles[7]}} pares</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <p>Anaquel 9</p>
+            <p>{{conteo_anaqueles[8]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 10</p>
+            <p>{{conteo_anaqueles[9]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 11</p>
+            <p>{{conteo_anaqueles[10]}} pares</p>
+        </div>
+        <div class="col-3">
+            <p>Anaquel 12</p>
+            <p>{{conteo_anaqueles[11]}} pares</p>
+        </div>
+    </div>
+</div>

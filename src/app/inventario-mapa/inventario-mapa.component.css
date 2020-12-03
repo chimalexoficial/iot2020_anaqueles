@@ -1,0 +1,19 @@
+.row {
+    height: 30%;
+}
+
+#padre_container {
+    height: 100%;
+}
+
+.col-3 {
+    background-color: grey;
+    margin: 2%;
+    padding: 0%;
+    color: white;
+    text-align: center;
+}
+
+#div_buscador {
+    height: auto;
+}
