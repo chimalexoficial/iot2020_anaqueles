@@ -28,7 +28,7 @@ export class InventarioTablaComponent implements OnInit {
     responsive: true,
   };
   barChartLabels2: Label[] = [];
-  barChartType2: ChartType = 'polarArea';
+  barChartType2: ChartType = 'pie';
   barChartLegend2 = true;
   barChartPlugins2 = [];
 

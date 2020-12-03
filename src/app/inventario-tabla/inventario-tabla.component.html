@@ -19,6 +19,10 @@
     <td>{{row['Fecha de entrada']}}</td>
   </tr>
 </table>
+
+<pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+
+
 <div class="chartjs-container">
   <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [plugins]="barChartPlugins"
   [legend]="barChartLegend" [chartType]="barChartType"></canvas>
@@ -29,4 +33,3 @@
   [legend]="barChartLegend2" [chartType]="barChartType2"></canvas>
 </div>
 
-<pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
